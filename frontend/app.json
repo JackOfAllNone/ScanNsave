@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "ScanNsave",
+    "slug": "scannsave",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "dark",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "splash": {
+      "backgroundColor": "#08110F"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.scannsave.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#090d16"
+      },
+      "package": "com.scannsave.app"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "ScanNsave needs camera access to scan product barcodes.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-status-bar",
+      "expo-secure-store"
+    ]
+  }
+}
